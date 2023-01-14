@@ -2,7 +2,7 @@
 
 // Using normal function
 function largestEvenNumber(nums) {
-    let largestEven = Number.MIN_VALUE;
+    let largestEven = -1;
     nums.forEach(largestEvenNumberUtil);
 
     function largestEvenNumberUtil(item) {
@@ -12,11 +12,11 @@ function largestEvenNumber(nums) {
     return largestEven;
 }
 
-// console.log(largestEvenNumber([1, 2, 3, 4, 5]));
+console.log(largestEvenNumber([1, 3, 5, 7]));
 
 // Using arrow function
 const largestEvenUsingArrow = (nums) => {
-    let largestEven = Number.MIN_VALUE;
+    let largestEven = -1;
     nums.forEach(largestEvenArrowUtil);
 
     function largestEvenArrowUtil(item) {
