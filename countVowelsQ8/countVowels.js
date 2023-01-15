@@ -1,5 +1,4 @@
 // Regular function
-
 function countVowels(input) {
     let count = 0;
     let vowels = ['a', 'e', 'i', 'o', 'u'];
@@ -15,10 +14,10 @@ function countVowels(input) {
 // console.log(countVowels("codeacademy"));
 
 // Arrow function and using forEach
-
-let countVowelsArrow = (input) => {
+let countVowelsUsingArrowFunction = (input) => {
     let count = 0;
     let vowels = ['a', 'e', 'i', 'o', 'u'];
+    input = input.split(""); // converting to array to use forEach
     input.forEach(countVowelArrowUtil);
 
     function countVowelArrowUtil(item) {
@@ -31,3 +30,4 @@ let countVowelsArrow = (input) => {
 }
 
 // console.log(countVowels("codeacademy"));
+module.exports = {countVowels, countVowelsUsingArrowFunction};
