@@ -1,5 +1,4 @@
 // Regular Function
-
 function changeCapitalisation(input) {
     let newString = "";
     for(let idx=0; idx<input.length; idx++) {
@@ -12,8 +11,7 @@ function changeCapitalisation(input) {
 // console.log(changeCapitalisation('IamGaurav'));
 
 // Arrow Function 
-
-let changeCapitalisationArrow = (input) => {
+let changeCapitalisationUsingArrowFunction = (input) => {
     let newString = ""; // new string because strings are immutable in js
     for(let idx=0; idx<input.length; idx++) {
         let currChar = (input.charCodeAt(idx) >= 65 && input.charCodeAt(idx) <= 90) ? input[idx].toLowerCase(): input[idx].toUpperCase();
@@ -22,4 +20,6 @@ let changeCapitalisationArrow = (input) => {
     return newString;
 }
 
-console.log(changeCapitalisationArrow('IamGaurav'));
+// console.log(changeCapitalisationArrow('IamGaurav'));
+
+module.exports = { changeCapitalisation, changeCapitalisationUsingArrowFunction};
