@@ -1,5 +1,4 @@
 // Regular Function
-
 function findLongestString(arr) {
     let finalString = arr[0];
     for(let idx=1; idx<arr.length; idx++)
@@ -15,7 +14,7 @@ function findLongestString(arr) {
 // console.log(findLongestString(["we", "love", "code", "academy"]));
 
 // Arrow function using forEach and ternary operations.
-let findLongestStringArrow = (arr) => {
+let findLongestStringUsingArrowFunction = (arr) => {
     let finalString = arr[0];
     arr.forEach(findLongestStringUtil);
 
@@ -26,4 +25,6 @@ let findLongestStringArrow = (arr) => {
     return finalString;
 }
 
-console.log(findLongestStringArrow(["we", "love", "code", "academy"]));
+// console.log(findLongestStringArrow(["we", "love", "code", "academy"]));
+
+module.exports = {findLongestString, findLongestStringUsingArrowFunction};
