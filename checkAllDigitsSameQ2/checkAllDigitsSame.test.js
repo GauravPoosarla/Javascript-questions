@@ -11,7 +11,7 @@ describe('finding if all the digits are same or not', () => {
     test('23 should return "false"', () => {
         expect(checkAllDigitsSame(23)).toBe(false);
     });
-    test('322 should return "true"', () => {
+    test('322 should return "false"', () => {
         expect(checkAllDigitsSame(322)).toBe(false);
     });
     test('1 should return "true"', () => {
