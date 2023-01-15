@@ -1,6 +1,6 @@
 // Regular function
 function checkAllDigitsSame(num) {
-    let lastDigit = num%10;
+    let lastDigit = num % 10;
     num /= 10;
     num = Math.trunc(num);
 
@@ -19,8 +19,8 @@ function checkAllDigitsSame(num) {
 // console.log(checkAllDigitsSame(23));
 
 // Arrow function
-const checkAllDigitsSameArrow = (num) => {
-    let lastDigit = num%10;
+const checkAllDigitsSameArrowFunction = (num) => {
+    let lastDigit = num % 10;
     num /= 10;
     num = Math.trunc(num);
 
@@ -37,3 +37,5 @@ const checkAllDigitsSameArrow = (num) => {
 }
 
 // console.log(checkAllDigitsSameArrow(23));
+
+module.exports = {checkAllDigitsSame, checkAllDigitsSameArrowFunction};
