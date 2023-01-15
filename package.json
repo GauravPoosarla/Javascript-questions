@@ -1,0 +1,23 @@
+{
+  "name": "javascript-questions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "question2.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GauravPoosarla/javascript-questions.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GauravPoosarla/javascript-questions/issues"
+  },
+  "homepage": "https://github.com/GauravPoosarla/javascript-questions#readme",
+  "devDependencies": {
+    "jest": "^29.3.1"
+  }
+}
